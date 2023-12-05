@@ -11,10 +11,27 @@ const StyledButton = styled.button`
 `;
 
 const Button = () => {
-  const [count, setCount] = useState(0);
+  async function handleClick() {
+    const key = 'AIzaSyChDO_SI_eK5wKMVurjLPfZi-j0fdMrgWQ';
+    const url = `https://youtube.googleapis.com/youtube/v3/videoCategories?key=${key}&regionCode=BY`;
+    const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+      },
+    };
+
+    try {
+      const response = await fetch(url);
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
+  }
   return (
     <div>
-      <StyledButton onClick={() => setCount(count + 1)}>{count}</StyledButton>
+      <StyledButton onClick={handleClick}>Click me!</StyledButton>
     </div>
   );
 };

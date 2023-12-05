@@ -4,8 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --env mode=development",
-    "build:dev": "webpack --env mode=development",
-    "build:prod": "webpack --env mode=production",
+    "build": "webpack --env mode=production",
     "prepare": "husky install",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",

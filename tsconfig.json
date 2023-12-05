@@ -11,7 +11,11 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@store": ["./src/store/*"],
+      "@utils": ["./src/utils/*"],
+      "@constants": ["./src/constants/*"]
     },
     "types": ["node", "jest", "@testing-library/jest-dom"]
   },
