@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 const StyledFlex = styled.div<AppFlexProps>`
   display: flex;
+  width: ${({ width }) => width || 'auto'};
+  height: ${({ height }) => height || 'auto'};
   position: relative;
   flex-direction: ${({ direction }) => direction || 'row'};
   align-items: ${({ align }) => align || 'stretch'};
@@ -24,6 +26,8 @@ type AppFlexProps = HTMLAttributes<HTMLDivElement> &
       | 'space-evenly'
       | 'stretch';
     basis: string;
+    width: string;
+    height: string;
     margin: string;
   }>;
 

@@ -11,19 +11,48 @@ import { AppFlex } from '../AppFlex';
 
 const StyledFooter = styled.footer`
   width: 100%;
-  height: 200px;
+  min-height: 200px;
+`;
+
+const StyledFooterLink = styled.a`
+  font-size: 1.1rem;
+  font-weight: 500;
+`;
+
+const StyledFooterCompany = styled.div`
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.86rem;
+  font-weight: 500;
 `;
 
 const AppFooter = () => {
   return (
     <StyledFooter>
       <AppContainer>
-        <AppFlex>
-          <AppSVGIcon icon={FacebookIcon}></AppSVGIcon>
-          <AppSVGIcon icon={TwitterIcon}></AppSVGIcon>
-          <AppSVGIcon icon={InstagramIcon}></AppSVGIcon>
-          <AppSVGIcon icon={LinkedinIcon}></AppSVGIcon>
+        <AppFlex direction='column' justify='space-between' margin='10px'>
+          <AppFlex direction='column-reverse'>
+            <AppFlex direction='column' margin='0 10px 10px'>
+              <StyledFooterLink>Terms Privacy Policy & Safety</StyledFooterLink>
+              <StyledFooterLink>How Youtube works</StyledFooterLink>
+              <StyledFooterLink>Test new features</StyledFooterLink>
+            </AppFlex>
+            <AppFlex direction='column' margin='0 10px 10px'>
+              <StyledFooterLink>About press Copyright</StyledFooterLink>
+              <StyledFooterLink>Contact Us</StyledFooterLink>
+              <StyledFooterLink>Advertise</StyledFooterLink>
+            </AppFlex>
+          </AppFlex>
+
+          <AppFlex justify='space-between' width='140px' margin='15px auto'>
+            <AppSVGIcon icon={FacebookIcon}></AppSVGIcon>
+            <AppSVGIcon icon={TwitterIcon}></AppSVGIcon>
+            <AppSVGIcon icon={InstagramIcon}></AppSVGIcon>
+            <AppSVGIcon icon={LinkedinIcon}></AppSVGIcon>
+          </AppFlex>
         </AppFlex>
+
+        <StyledFooterCompany>2023 Modsen Company</StyledFooterCompany>
       </AppContainer>
     </StyledFooter>
   );
