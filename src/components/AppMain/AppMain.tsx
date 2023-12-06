@@ -13,6 +13,8 @@ import { AppSkeletonLoader } from '../AppSkeletonLoader';
 const StyledMain = styled.main`
   margin-top: 60px;
   padding: 20px 0;
+  background: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const AppMain = () => {
@@ -40,7 +42,6 @@ const AppMain = () => {
           <AppButton>Show More</AppButton>
         </AppFlex>
       </AppContainer>
-      <AppDivider />
     </StyledMain>
   );
 };

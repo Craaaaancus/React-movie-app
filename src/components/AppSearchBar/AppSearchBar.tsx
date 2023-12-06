@@ -23,6 +23,7 @@ const StyledSearchBox = styled.div`
 const StyledSearchButton = styled.button`
   width: 60px;
   outline: none;
+  background: ${(props) => props.theme.colors.searchButton};
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-left: none;
   border-radius: 0 20px 20px 0;
@@ -35,14 +36,15 @@ const StyledSearchInput = styled.input`
   height: 100%;
   width: 100%;
   padding: 0 30px;
-  background-color: transparent;
+  color: ${(props) => props.theme.colors.searchText};
+  background-color: ${(props) => props.theme.colors.search};
   outline: none;
   font-size: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 20px 0 0 20px;
 
   &:focus {
-    border-color: blue;
+    border-color: #5252e6;
   }
 `;
 
@@ -64,7 +66,7 @@ const StyledClearButton = styled.div`
     content: '';
     height: 26px;
     width: 2px;
-    background-color: #333;
+    background-color: ${(props) => props.theme.colors.searchClear};
   }
 
   &:before {

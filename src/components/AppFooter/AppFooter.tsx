@@ -12,6 +12,11 @@ import { AppFlex } from '../AppFlex';
 const StyledFooter = styled.footer`
   width: 100%;
   min-height: 200px;
+
+  & * {
+    background: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.text};
+  }
 `;
 
 const StyledFooterLink = styled.a`
@@ -31,7 +36,7 @@ const AppFooter = () => {
   return (
     <StyledFooter>
       <AppContainer>
-        <AppFlex direction='column' justify='space-between' margin='10px'>
+        <AppFlex direction='column' justify='space-between'>
           <AppFlex direction='column-reverse'>
             <AppFlex direction='column' margin='0 10px 10px'>
               <StyledFooterLink>Terms Privacy Policy & Safety</StyledFooterLink>
@@ -45,7 +50,7 @@ const AppFooter = () => {
             </AppFlex>
           </AppFlex>
 
-          <AppFlex justify='space-between' width='140px' margin='15px auto'>
+          <AppFlex justify='space-between' width='140px' margin='auto'>
             <AppSVGIcon icon={FacebookIcon}></AppSVGIcon>
             <AppSVGIcon icon={TwitterIcon}></AppSVGIcon>
             <AppSVGIcon icon={InstagramIcon}></AppSVGIcon>

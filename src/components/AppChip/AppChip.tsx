@@ -8,15 +8,16 @@ type AppChipProps = HTMLAttributes<HTMLDivElement> & {
 const StyledChip = styled.div<AppChipProps>`
   display: inline-block;
   font-size: 1rem;
+  font-weight: 500;
   line-height: 1.8rem;
   padding: 0 15px;
   margin: 0 10px;
-  background: ${({ isActive }) => 'rgba(0, 0, 0, 0.06)'};
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   user-select: none;
   cursor: pointer;
-  transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
+  background: ${(props) => props.theme.colors.searchButton};
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const AppChip = (props: AppChipProps) => {

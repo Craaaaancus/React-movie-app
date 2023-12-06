@@ -6,7 +6,7 @@ type AppDividerProps = {
 };
 
 const StyledDivider = styled.hr<AppDividerProps>`
-  border: 1px solid rgba(0, 0, 0, 0.19);
+  border: 1px solid ${(props) => props.theme.colors.divider};
   margin: ${({ margin }) => margin || '10px 0'};
 `;
 

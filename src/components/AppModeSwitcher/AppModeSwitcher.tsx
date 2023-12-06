@@ -43,20 +43,10 @@ const StyledSwitcherInput = styled.input`
   }
 `;
 
-const AppModeSwitcher = () => {
-  const [theme, setTheme] = useState(APP_THEME.LIGHT);
-
-  const toggleTheme = () => {
-    setTheme(theme === APP_THEME.DARK ? APP_THEME.LIGHT : APP_THEME.DARK);
-  };
-
-  useEffect(() => {
-    document.body.setAttribute('data-theme', theme);
-  }, [theme]);
-
+const AppModeSwitcher = (props: { toggleTheme: () => void }) => {
   return (
     <StyledSwitcherLabel>
-      <StyledSwitcherInput type='checkbox' onChange={toggleTheme}></StyledSwitcherInput>
+      <StyledSwitcherInput type='checkbox' onChange={props.toggleTheme}></StyledSwitcherInput>
       <StyledSwitcherSlider></StyledSwitcherSlider>
     </StyledSwitcherLabel>
   );

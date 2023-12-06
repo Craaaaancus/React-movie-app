@@ -4,21 +4,21 @@ import { AppFlex } from '../AppFlex';
 
 const skeletonLoading = keyframes`
   from {
-    background-color: hsl(200, 20%, 70%);
+    background-color: hsl(200, 20%, 50%);
   }
 
   to {
-    background-color: hsl(200, 20%, 95%);
+    background-color: hsl(200, 20%, 75%);
   }
 `;
 
 const contentLoading = keyframes`
   from {
-    background-color: hsl(200, 20%, 40%);
+    background-color: hsl(200, 20%, 20%);
   }
 
   to {
-    background-color: hsl(200, 20%, 75%);
+    background-color: hsl(200, 20%, 55%);
   }
 `;
 
