@@ -6,6 +6,9 @@ import { AppDivider } from '../AppDivider';
 import { AppTopicFilter } from '../AppTopicFilter';
 import { AppButton } from '../AppButton';
 import { AppFlex } from '../AppFlex';
+import { AppGrid } from '../AppGrid';
+import { AppVideoCard } from '../AppVideoCard';
+import { AppSkeletonLoader } from '../AppSkeletonLoader';
 
 const StyledMain = styled.main`
   margin-top: 60px;
@@ -20,11 +23,18 @@ const AppMain = () => {
       </AppContainer>
       <AppDivider />
       <AppContainer>
-        <div>
-          orem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est incidunt accusamus
-          veniam sed! Cum repudiandae delectus cumque aut voluptas amet quod, saepe qui nisi enim!
-          Rem fugiat dignissimos eum.
-        </div>
+        <AppGrid columns='1fr 1fr 1fr' gap='20px' margin='20px 0'>
+          <AppSkeletonLoader></AppSkeletonLoader>
+          <AppVideoCard></AppVideoCard>
+          <AppVideoCard></AppVideoCard>
+          <AppVideoCard></AppVideoCard>
+          <AppSkeletonLoader></AppSkeletonLoader>
+          <AppVideoCard></AppVideoCard>
+          <AppVideoCard></AppVideoCard>
+          <AppVideoCard></AppVideoCard>
+          <AppVideoCard></AppVideoCard>
+          <AppVideoCard></AppVideoCard>
+        </AppGrid>
 
         <AppFlex margin='20px 0 10px'>
           <AppButton>Show More</AppButton>

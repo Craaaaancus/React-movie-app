@@ -24,6 +24,7 @@ const StyledFooterCompany = styled.div`
   color: rgba(0, 0, 0, 0.4);
   font-size: 0.86rem;
   font-weight: 500;
+  padding-bottom: 20px;
 `;
 
 const AppFooter = () => {

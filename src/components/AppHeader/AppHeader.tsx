@@ -27,7 +27,7 @@ const AppHeader = () => {
           <AppModeSwitcher></AppModeSwitcher>
         </AppFlex>
       </AppContainer>
-      <AppDivider />
+      <AppDivider margin='0' />
     </StyledHeader>
   );
 };

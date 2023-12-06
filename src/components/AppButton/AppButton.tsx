@@ -4,8 +4,8 @@ import styled from 'styled-components';
 type AppButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 const StyledButton = styled.button`
-  font-size: 1.2rem;
-  padding: 5px 20px;
+  font-size: 1.3rem;
+  padding: 10px 25px;
   margin: 0 auto;
   font-weight: 700;
   background: #ff8a00;

@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
-const StyledDivider = styled.hr`
+type AppDividerProps = {
+  margin?: string;
+};
+
+const StyledDivider = styled.hr<AppDividerProps>`
   border: 1px solid rgba(0, 0, 0, 0.19);
-  margin: 10px 0;
+  margin: ${({ margin }) => margin || '10px 0'};
 `;
 
-const AppDivider = () => {
-  return <StyledDivider />;
+const AppDivider: FC<AppDividerProps> = (props) => {
+  return <StyledDivider {...props} />;
 };
 
 export default AppDivider;
