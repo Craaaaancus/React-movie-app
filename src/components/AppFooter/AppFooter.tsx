@@ -1,13 +1,12 @@
-import React from 'react';
-import { AppContainer } from '../AppContainer';
+import { AppContainer } from '@components/AppContainer';
 import styled from 'styled-components';
-import { AppDivider } from '../AppDivider';
+import { AppDivider } from '@components/AppDivider';
 import FacebookIcon from '@/assets/Facebook.svg';
 import TwitterIcon from '@/assets/Twitter.svg';
 import InstagramIcon from '@/assets/Instagram.svg';
 import LinkedinIcon from '@/assets/Linkedin.svg';
-import { AppSVGIcon } from '../AppSVGIcon';
-import { AppFlex } from '../AppFlex';
+import { AppSVGIcon } from '@components/AppSVGIcon';
+import { AppFlex } from '@components/AppFlex';
 
 const StyledFooter = styled.footer`
   width: 100%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { AppFlex } from '../AppFlex';
+import { AppFlex } from '@components/AppFlex';
 
 const skeletonLoading = keyframes`
   from {

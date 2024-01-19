@@ -1,6 +1,6 @@
 import React from 'react';
-import { AppChip } from '../AppChip';
-import { AppFlex } from '../AppFlex';
+import { AppChip } from '@components/AppChip';
+import { AppFlex } from '@components/AppFlex';
 
 const AppTopicFilter = () => {
   return (

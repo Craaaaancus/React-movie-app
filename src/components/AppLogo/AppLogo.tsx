@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '@/assets/app-logo.svg';
 import { AppFlex } from '@components/AppFlex';
-import { AppSVGIcon } from '../AppSVGIcon';
+import { AppSVGIcon } from '@components/AppSVGIcon';
 
 const StyledLogoTitle = styled.div`
   font-size: 1.2rem;

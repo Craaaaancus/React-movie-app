@@ -20,6 +20,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
   }
+
+  body.active-modal {
+    overflow-y: hidden;
+  }
 `;
 
 root.render(

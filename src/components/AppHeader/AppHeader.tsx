@@ -1,11 +1,11 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { AppModeSwitcher } from '../AppModeSwitcher';
+import { AppModeSwitcher } from '@components/AppModeSwitcher';
 import { AppFlex } from '@components/AppFlex';
 import { AppLogo } from '@components/AppLogo';
 import { AppSearchBar } from '@components/AppSearchBar';
-import { AppContainer } from '../AppContainer';
-import { AppDivider } from '../AppDivider';
+import { AppContainer } from '@components/AppContainer';
+import { AppDivider } from '@components/AppDivider';
 
 const StyledHeader = styled.header`
   position: fixed;

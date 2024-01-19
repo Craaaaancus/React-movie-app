@@ -1,14 +1,12 @@
-import React from 'react';
-import { AppContainer } from '../AppContainer';
-import Button from '../Button';
 import styled from 'styled-components';
-import { AppDivider } from '../AppDivider';
-import { AppTopicFilter } from '../AppTopicFilter';
-import { AppButton } from '../AppButton';
-import { AppFlex } from '../AppFlex';
-import { AppGrid } from '../AppGrid';
-import { AppVideoCard } from '../AppVideoCard';
-import { AppSkeletonLoader } from '../AppSkeletonLoader';
+import { AppContainer } from '@components/AppContainer';
+import { AppDivider } from '@components/AppDivider';
+import { AppTopicFilter } from '@components/AppTopicFilter';
+import { AppButton } from '@components/AppButton';
+import { AppFlex } from '@components/AppFlex';
+import { AppGrid } from '@components/AppGrid';
+import { AppSkeletonLoader } from '@components/AppSkeletonLoader';
+import { AppVideoCard } from '@components/AppVideoCard';
 
 const StyledMain = styled.main`
   margin-top: 60px;
@@ -26,16 +24,9 @@ const AppMain = () => {
       <AppDivider />
       <AppContainer>
         <AppGrid columns='1fr 1fr 1fr' gap='20px' margin='20px 0'>
-          <AppSkeletonLoader></AppSkeletonLoader>
-          <AppVideoCard></AppVideoCard>
-          <AppVideoCard></AppVideoCard>
           <AppVideoCard></AppVideoCard>
           <AppSkeletonLoader></AppSkeletonLoader>
-          <AppVideoCard></AppVideoCard>
-          <AppVideoCard></AppVideoCard>
-          <AppVideoCard></AppVideoCard>
-          <AppVideoCard></AppVideoCard>
-          <AppVideoCard></AppVideoCard>
+          <AppSkeletonLoader></AppSkeletonLoader>
         </AppGrid>
 
         <AppFlex margin='20px 0 10px'>

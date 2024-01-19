@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { AppFlex } from '../AppFlex';
+import { AppFlex } from '@components/AppFlex';
 import styled from 'styled-components';
 
 type AppVideoCardProps = {
